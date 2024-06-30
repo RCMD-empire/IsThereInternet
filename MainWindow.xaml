@@ -1,0 +1,15 @@
+﻿<Window x:Class="IsThereInternet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IsThereInternet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <CheckBox Click="beeping" x:Name="enabler" Content="Enabler" HorizontalAlignment="Left" Margin="159,154,0,0" VerticalAlignment="Top"/>
+        <Button Click="test" Content="Test" HorizontalAlignment="Left" Margin="400,134,0,0" VerticalAlignment="Top"/>
+        <ListBox d:ItemsSource="{d:SampleData ItemCount=5}"  Margin="252,183,68,34"/>
+
+    </Grid>
+</Window>
